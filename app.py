@@ -6,6 +6,7 @@ from keras.src.ops.operation import Operation
 from flask import Flask, render_template, request
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+
 # Fix HDF5 model deserialization when saved layer configs include
 # unsupported `quantization_config` keys.
 _orig_operation_from_config = Operation.from_config.__func__
